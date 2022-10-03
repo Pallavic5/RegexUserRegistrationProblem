@@ -6,15 +6,15 @@ public class UserRegistration {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your First Name:");
-		String firstName = sc.next();
-		userFirstName(firstName);
+		System.out.println("Enter your Last Name:");
+		String lastName = sc.next();
+		userLastName(lastName);
 
 	}
+	
+	private static void userLastName(String lastName) {
 
-	private static void userFirstName(String firstName) {
-
-		UserInputValidation.isValidName(firstName);
+		UserInputValidation.isValidName(lastName);
 	}
 
 }

@@ -15,6 +15,4 @@ public class UserInputValidation {
 			System.out.println("Invalid");
 		}
 	}
-
-
 }
