@@ -17,29 +17,32 @@ public class UserRegistration {
 		userEmail(email);
 		System.out.println("Enter your mobile Number");
 		String mobileNumber = sc.next();
+		sc.nextLine();
 		userMobileNumber(mobileNumber);
-
+		System.out.println("Enter your password");
+		String password = sc.next();
+		userPassword(password);
 	}
-	
+
 	private static void userFirstName(String firstName) {
-		
 		UserInputValidation.isValidName(firstName);
-		
+
 	}
 
 	private static void userLastName(String lastName) {
-
 		UserInputValidation.isValidName(lastName);
 	}
-	
+
 	public static void userEmail(String email) {
-		
 		UserInputValidation.isValidEmail(email);
 	}
-	
+
 	public static void userMobileNumber(String mobileNumber) {
-		
 		UserInputValidation.isValidMobileNumber(mobileNumber);
+	}
+
+	public static void userPassword(String password) {
+		UserInputValidation.isValidPassword(password);
 	}
 
 }
