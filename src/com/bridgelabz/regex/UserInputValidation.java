@@ -26,4 +26,15 @@ public class UserInputValidation {
 			System.out.println("Invalid");
 		}
 	}
+
+	public static void isValidMobileNumber(String mobileNumber) {
+		String regex = "^[6789]{1}[0-9]{9}$";
+		Pattern pattern = Pattern.compile(regex);
+		Matcher matcher = pattern.matcher(mobileNumber);
+		if (matcher.matches()) {
+			System.out.println("Valid");
+		} else {
+			System.out.println("Invalid");
+		}
+	}
 }

@@ -15,6 +15,9 @@ public class UserRegistration {
 		System.out.println("Enter your email");
 		String email = sc.next();
 		userEmail(email);
+		System.out.println("Enter your mobile Number");
+		String mobileNumber = sc.next();
+		userMobileNumber(mobileNumber);
 
 	}
 	
@@ -32,6 +35,11 @@ public class UserRegistration {
 	public static void userEmail(String email) {
 		
 		UserInputValidation.isValidEmail(email);
+	}
+	
+	public static void userMobileNumber(String mobileNumber) {
+		
+		UserInputValidation.isValidMobileNumber(mobileNumber);
 	}
 
 }
